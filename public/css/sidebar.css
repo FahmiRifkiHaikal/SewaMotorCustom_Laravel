@@ -1,0 +1,50 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Transparan dengan sedikit opacity */
+    overflow-x: hidden;
+    transition: width 0.5s; /* Ubah transisi hanya pada lebar */
+    padding-top: 60px;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan untuk efek kedalaman */
+}
+
+.sidebar a {
+    padding: 10px 20px; /* Sesuaikan padding untuk tata letak yang lebih baik */
+    text-decoration: none;
+    font-size: 22px; /* Kurangi ukuran font sedikit */
+    color: #f1f1f1; /* Ubah warna teks menjadi lebih terang */
+    display: block;
+    transition: color 0.3s, background-color 0.3s; /* Tambahkan transisi untuk warna dan latar belakang */
+    border-radius: 4px; /* Tambahkan border radius untuk tampilan yang lebih lembut */
+    margin: 5px 0; /* Tambahkan margin untuk pemisahan antar tautan */
+}
+
+.sidebar a:hover {
+    color: #ffffff; /* Ubah warna teks saat hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Tambahkan latar belakang semi-transparan saat hover */
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7); /* Tambahkan warna latar belakang semi-transparan */
+    border: none;
+    color: #ffffff; /* Ubah warna teks menjadi putih */
+    padding: 10px 20px; /* Sesuaikan padding untuk tampilan yang lebih baik */
+    margin-left: 0;
+    position: fixed;
+    z-index: 2;
+    top: 20px;
+    left: 10px;
+    border-radius: 4px; /* Tambahkan border radius */
+    transition: background-color 0.3s, color 0.3s; /* Tambahkan transisi untuk warna dan latar belakang */
+}
+
+.openbtn:hover {
+    background-color: #333; /* Ubah warna latar belakang saat hover */
+    color: white;
+}
